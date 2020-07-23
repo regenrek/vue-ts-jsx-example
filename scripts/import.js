@@ -27,23 +27,16 @@ async function updateImport(targetVersion, packageVersion) {
       })
       .sort()
 
-    // Nj<Component>/Nj<Component>.vue ui files
+    // Nj<Component>/Nj<Component>.tsx ui files
     const filesVue = fs
       .readdirSync(pkdDir)
       .filter(f => f.startsWith('Nj'))
-      .map((f) => {
-        // import different script for vue2 and vue3, if avaliable
-        // if (fs.existsSync(path.join(pkdDir, f, `index.v${targetVersion}.ts`)))
-        //   return path.join(f, `index.v${targetVersion}`)
-        return f
-      })
       .sort()
 
     let content = ''
     content += `export const version = '${packageVersion || await getVersion()}'\n\n`
     content += files.map(f => `export * from './${f}'\n`).join('')
     content += filesVue.map(f => `export * from './${f}'\n`).join('')
-    // content += filesVue.map(f => `export * from './${f}/${f}.vue'\n`).join('')
 
     fs.writeFileSync(path.join(pkdDir, 'index.ts'), content)
   }

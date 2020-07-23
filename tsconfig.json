@@ -17,6 +17,7 @@
       "baseUrl": ".",
       "declaration": true,
       "declarationMap": true,
+      "experimentalDecorators": true,
       "types": [
         "webpack-env"
       ],
