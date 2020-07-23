@@ -3,10 +3,6 @@ import typescript from 'rollup-plugin-typescript2'
 import { uglify } from 'rollup-plugin-uglify'
 import dts from 'rollup-plugin-dts'
 import path from 'path'
-import babel from 'rollup-plugin-babel'
-import resolve from 'rollup-plugin-node-resolve'
-import { DEFAULT_EXTENSIONS as babel_extensions } from '@babel/core'
-import commonjs from 'rollup-plugin-commonjs'
 
 const packages = require('./scripts/packages')
 const configs = []
@@ -17,7 +13,7 @@ for (const [pkg, options] of packages) {
     'vue-demi': 'VueDemi',
     '@vue/composition-api': 'VueCompositionAPI',
     '@vue/runtime-dom': 'Vue',
-    ...(options.globals || {})
+    ...(options.globals || {}),
   }
   const name = 'VueUse'
 
@@ -26,17 +22,17 @@ for (const [pkg, options] of packages) {
     output: [
       {
         file: `dist/${pkg}/index.cjs.js`,
-        format: 'cjs'
+        format: 'cjs',
       },
       {
         file: `dist/${pkg}/index.esm.js`,
-        format: 'es'
+        format: 'es',
       },
       {
         file: `dist/${pkg}/index.umd.js`,
         format: 'umd',
         name,
-        globals
+        globals,
       },
       {
         file: `dist/${pkg}/index.umd.min.js`,
@@ -44,49 +40,38 @@ for (const [pkg, options] of packages) {
         name,
         globals,
         plugins: [
-          uglify()
-        ]
-      }
+          uglify(),
+        ],
+      },
     ],
     plugins: [
-      resolve(),
       typescript({
-        tsconfig: path.resolve(__dirname, 'tsconfig.json'),
+        tsconfig: path.resolve(__dirname, 'tsconfig.rollup.json'),
         tsconfigOverride: {
           declaration: false,
           declarationDir: null,
-          declarationMap: false
-        }
+          declarationMap: false,
+        },
       }),
-      commonjs(),
-      babel({
-        extensions: [...babel_extensions, '.ts', '.tsx'],
-        exclude: ['node_modules/**'],
-        runtimeHelpers: true
-      })
     ],
     external: [
       'vue-demi',
       'vue',
       '@vue/composition-api',
       '@vue/runtime-dom',
-      'vue',
-      'vue-property-decorator',
-      'vue-class-component',
-      'vue-tsx-support',
-      ...(options.external || [])
-    ]
+      ...(options.external || []),
+    ],
   })
 
   configs.push({
     input: `./typings/${pkg}/index.d.ts`,
     output: {
       file: `dist/${pkg}/index.d.ts`,
-      format: 'es'
+      format: 'es',
     },
     plugins: [
-      dts()
-    ]
+      dts(),
+    ],
   })
 }
 

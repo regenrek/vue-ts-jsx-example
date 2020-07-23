@@ -1,4 +1,3 @@
-import * as vca from 'vue-tsx-support/lib/vca'
 import 'vue-tsx-support/enable-check'
 // import { useToggle } from '@nujek/composables'
 import { css } from 'emotion'
@@ -15,7 +14,20 @@ const style = {
 export class NjBurger extends Vue {
   render(): VNode {
     return (
-      <button>ASDF</button>
+      <div
+        id="burger"
+        // :class="{ 'active': active }"
+        class={style.button}
+        on={this.$listeners}
+      >
+        <slot>
+          <button type="button" class="relative block z-999 border-0 cursor-pointer focus:outline-none" title="Menu">
+            <span class="burger-bar--1" />
+            <span class="burger-bar--2" />
+            <span class="burger-bar--3" />
+          </button>
+        </slot>
+      </div>
     )
   }
 }

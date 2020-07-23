@@ -1,5 +1,6 @@
 import * as vca from 'vue-tsx-support/lib/vca'
-import { NjBurger } from '../packages/ui/NjBurger'
+// import { NjBurger } from '../packages/ui/NjBurger'
+import { NjBurger } from '../dist/ui/'
 import 'tailwindcss/dist/base.min.css'
 
 export default vca.component({
