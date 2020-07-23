@@ -1,6 +1,6 @@
 {
   "name": "@nujek/ui",
-  "version": "0.0.94",
+  "version": "0.0.95",
   "description": "Nujek framework",
   "repository": "git@gitlab.com:nujek2/nujek.git",
   "author": "Kevin Regenrek <hello@regenrek.at>",
@@ -28,13 +28,13 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  }, 
+  },
   "lint-staged": {
     "{packages,.storybook,scripts}/**/*.{js,ts,tsx,vue,md} *.js": [
       "eslint --fix",
       "git add"
     ]
-  },   
+  },
   "dependencies": {
     "@vue/babel-sugar-v-model": "^1.1.2",
     "@vue/composition-api": "^1.0.0-beta.1",
