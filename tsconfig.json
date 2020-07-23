@@ -1,0 +1,50 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "esnext",
+      "strict": true,
+      "allowJs": false,
+      "jsx": "preserve",
+      "jsxFactory": "VueTsxSupport",
+      "importHelpers": true,
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "sourceMap": true,
+      "noImplicitAny": false,
+      "noUnusedLocals": false,
+      "noUnusedParameters": false,
+      "baseUrl": ".",
+      "declaration": true,
+      "declarationMap": true,
+      "types": [
+        "webpack-env"
+      ],
+      "paths": {
+        "@/*": [
+          "src/*"
+        ]
+      },
+      "lib": [
+        "esnext",
+        "dom",
+        "dom.iterable",
+        "scripthost"
+      ]
+    },
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "src/**/*.vue",
+      "packages/ui/*/*.ts",
+      "packages/ui/*/*.tsx",
+      "tests/**/*.ts",
+      "tests/**/*.tsx",
+      "node_modules/vue-tsx-support/enable-check.d.ts"
+    ],
+    "exclude": [
+      "node_modules",
+      "**/node_modules" // avoid yarn linked errors
+    ]
+  }
+  

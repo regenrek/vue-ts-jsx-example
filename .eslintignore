@@ -1,0 +1,6 @@
+dist/
+typings/
+projects/
+!/.storybook
+!/.eslintrc.js
+!/rollup.config.js
