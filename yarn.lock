@@ -16005,6 +16005,11 @@ vue-tsx-support@^3.0.0-preview.1:
   resolved "http://172.104.140.27:4873/vue-tsx-support/-/vue-tsx-support-3.0.0-preview.1.tgz#11a446c6b8c84835681917450fa0455c8b3733f4"
   integrity sha512-JmbF7yBSBdrYT90lmpee+0VeCbTpLU2Fz2mybHkxgxgF0PwrwC+DaWaQHajX3aVQX3ZaYOkVWIEGiK6Zo7U9AA==
 
+vue-unstated@^0.0.7:
+  version "0.0.7"
+  resolved "http://172.104.140.27:4873/vue-unstated/-/vue-unstated-0.0.7.tgz#42e768fd96360ae0df5a2bee271ed74418525717"
+  integrity sha512-lvMa0kgp+DNuzB1aHOMFDEDybDjyXR0G9fjwu0+yhR2KS95mkfNun/Grk0ooUrZUJyfzLoSpbwQFOaNXz565Dg==
+
 vue@^2.6.11:
   version "2.6.11"
   resolved "http://172.104.140.27:4873/vue/-/vue-2.6.11.tgz#76594d877d4b12234406e84e35275c6d514125c5"

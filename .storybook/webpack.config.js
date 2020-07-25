@@ -89,33 +89,10 @@ module.exports = ({ config }) => {
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
     use: [
-      {
-        loader: require.resolve('babel-loader'),
-        options: {
-          presets: [
-            'vca-jsx',
-            '@vue/cli-plugin-babel/preset'
-          ],
-          plugins: [
-            ['emotion', { autoLabel: true }],
-            ['babel-plugin-vue-tsx-functional/lib/plugin', { funcName: '_fc' }],
-            'babel-plugin-vue-jsx-modifier',
-            [
-              '@babel/plugin-transform-runtime',
-              {
-                regenerator: true
-              }
-            ]
-          ]
-        }
-      },
+      'babel-loader',
       {
         loader: 'ts-loader',
         options: { transpileOnly: true }
-      },
-      {
-        loader: require.resolve('@storybook/source-loader'),
-        options: { parser: 'typescript' }
       }
     ],
     exclude: /node_modules/

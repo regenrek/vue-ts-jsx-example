@@ -1,6 +1,6 @@
 import 'vue-tsx-support/enable-check'
 import { storiesOf } from '@storybook/vue'
-import { NjBurger } from '.'
+import { NjBurger, NjThemeProvider } from '../'
 import Vue, { VNode } from 'vue'
 
 storiesOf('UI', module)
@@ -10,7 +10,9 @@ storiesOf('UI', module)
         return (
           <div>
             <div id='demo'>
-              <NjBurger />
+              <NjThemeProvider>
+                <NjBurger />
+              </NjThemeProvider>
             </div>
           </div>
         )

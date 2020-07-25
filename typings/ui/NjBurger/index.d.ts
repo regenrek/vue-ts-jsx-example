@@ -1,2 +1,2 @@
-import { NjBurger } from './NjBurger';
+import NjBurger from './NjBurger';
 export { NjBurger };

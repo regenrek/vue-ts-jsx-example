@@ -43,7 +43,8 @@
     "core-js": "^3.6.5",
     "tailwindcss": "^1.5.2",
     "vue": "^2.6.11",
-    "vue-demi": "^0.1.4"
+    "vue-demi": "^0.1.4",
+    "vue-unstated": "^0.0.7"
   },
   "devDependencies": {
     "@antfu/eslint-config-vue": "^0.2.14",

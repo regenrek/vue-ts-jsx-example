@@ -1,13 +1,6 @@
-import 'vue-tsx-support/enable-check';
+export declare const anim: string;
 declare const _default: import("vue").ComponentOptions<import("vue-demi").Vue, {
-    theme: {
-        burger: {
-            burgerX: string;
-            burgerThickness: string;
-            burgerColor: string;
-            burgerSize: string;
-        };
-    };
+    themeVariant: string;
 } & {
     [key: string]: unknown;
 }, {}, {}, unknown, {
@@ -15,14 +8,7 @@ declare const _default: import("vue").ComponentOptions<import("vue-demi").Vue, {
 }> & import("vue").VueConstructor<import("vue-demi").Vue> & (new (...args: any[]) => import("vue-demi").ComponentRenderProxy<{
     [x: string]: any;
 }, {
-    theme: {
-        burger: {
-            burgerX: string;
-            burgerThickness: string;
-            burgerColor: string;
-            burgerSize: string;
-        };
-    };
+    themeVariant: string;
 }, {
     [x: string]: any;
 }, {}, {}, {

@@ -1,19 +1,22 @@
 import * as vca from 'vue-tsx-support/lib/vca'
 // import { NjBurger } from '../packages/ui/NjBurger'
-import { NjBurger } from '../dist/ui/'
+import { NjBurger, NjThemeProvider } from '../dist/ui'
 import 'tailwindcss/dist/base.min.css'
-
+// import { themeContainer } from '../dist/composables'
 export default vca.component({
   name: 'App',
   components: {
-    NjBurger
+    NjBurger,
+    NjThemeProvider
   },
   setup() {
     return () => {
       return (
-        <div id="app">
-          <NjBurger />
-        </div>
+        <NjThemeProvider>
+          <div id="app">
+            <NjBurger />
+          </div>
+        </NjThemeProvider>
       )
     }
   }
