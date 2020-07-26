@@ -8,6 +8,10 @@ declare const _default: import("vue").ComponentOptions<import("vue-demi").Vue, {
             burgerSize: string;
         };
     };
+    active: boolean;
+    inputListeners: string & {
+        click(event: any): Promise<void>;
+    };
 } & {
     [key: string]: unknown;
 }, {}, {}, unknown, {
@@ -22,6 +26,10 @@ declare const _default: import("vue").ComponentOptions<import("vue-demi").Vue, {
             burgerColor: string;
             burgerSize: string;
         };
+    };
+    active: boolean;
+    inputListeners: string & {
+        click(event: any): Promise<void>;
     };
 }, {
     [x: string]: any;
