@@ -21,7 +21,7 @@ export const BaseButton = ofType<
 {
   onClick: MouseEvent
 }
->().convert(Vue.component('MdButton'))
+>().convert(Vue.component('BaseButton'))
 
 export default vca.component({
   name: 'NjButton',

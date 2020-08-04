@@ -14,9 +14,8 @@ storiesOf('UI', module)
           <div>
             <div id='demo'>
               <NjThemeProvider>
-                <NjHeader logo={x} logoAlt={y}>
-                  <template slot="logo" v-slot={logo, logoAlt}>
-                    {logo} + {logoAlt}
+                <NjHeader>
+                  <template slot="logo">
                   </template>
                   <template slot="burger">
                     <NjBurger />

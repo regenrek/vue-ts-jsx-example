@@ -14,11 +14,11 @@
       "noImplicitAny": false,
       "noUnusedLocals": false,
       "noUnusedParameters": false,
-      "baseUrl": ".",
       "declaration": true,
       "declarationDir": "./typings",
       "experimentalDecorators": true,
       "rootDir": "packages",
+      "baseUrl": ".",
       "paths": {
         "@/*": [
           "src/*"
@@ -34,12 +34,13 @@
     "include": [
       "packages/**/*.ts",
       "packages/**/*.tsx",
-      "node_modules/vue-tsx-support/enable-check.d.ts"
+      "node_modules/vue-tsx-support/enable-check.d.ts",
+      "types/*.d.ts"
     ],
     "exclude": [
       "src",
       "node_modules",
-      "**/node_modules" // avoid yarn linked errors
+      "**/node_modules"
     ]
   }
   

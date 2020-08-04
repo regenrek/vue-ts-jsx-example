@@ -26,8 +26,7 @@ export default defineComponent({
       isFixed
     } = this
 
-    return (
-      <div class={['bg-red', { fixed: isFixed }]}>
+    { /* <div class={['bg-red', { fixed: isFixed }]}>
         <header>
           <div slot="logo" v-slot="{logo,logoAlt}">
             <img src={logo} alt={logoAlt} />
@@ -35,7 +34,10 @@ export default defineComponent({
           {this.$slots.sidebar}
           {this.$slots.burger}
         </header>
-      </div>
+      </div> */ }
+
+    return (
+      <div>Header</div>
     )
   }
 })

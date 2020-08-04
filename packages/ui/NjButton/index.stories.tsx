@@ -4,14 +4,18 @@ import { NjThemeProvider, NjButton } from '../'
 import Vue, { VNode } from 'vue'
 
 storiesOf('UI', module)
-  .add('NjTextInput', () => {
+  .add('NjButton', () => {
     return Vue.extend({
       render(): VNode {
+        const onOk = async() => {
+          alert('hey')
+        }
+
         return (
           <div>
             <div id='demo'>
               <NjThemeProvider>
-                <NjButton href="https://www.google.at" target="_blank">
+                <NjButton action={onOk}>
                     Weiter
                 </NjButton>
               </NjThemeProvider>
