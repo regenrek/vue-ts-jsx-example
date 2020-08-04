@@ -42,7 +42,9 @@
     "@vue/composition-api": "^1.0.0-beta.1",
     "core-js": "^3.6.5",
     "tailwindcss": "^1.5.2",
+    "vee-validate": "^4.0.0-alpha.6",
     "vue": "^2.6.11",
+    "vue-composable": "^1.0.0-beta.3",
     "vue-demi": "^0.1.4",
     "vue-unstated": "^0.0.7"
   },
@@ -155,6 +157,7 @@
     "core-js": "^3.6.5",
     "tailwindcss": "^1.4.6",
     "tailwindcss-multi-theme": "^1.0.3",
+    "vee-validate": "4.0.0-alpha.6",
     "vue": "^2.6.11",
     "vue-unstated": "^0.0.7"
   }

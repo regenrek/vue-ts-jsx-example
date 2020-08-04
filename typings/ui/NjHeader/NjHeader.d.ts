@@ -20,7 +20,7 @@ declare const _default: import("vue").ComponentOptions<Vue, {
     logo?: any;
     logoAlt?: string | undefined;
     isFixed?: boolean | undefined;
-}> & import("vue").VueConstructor<Vue> & (new (...args: any[]) => import("vue-demi").ComponentRenderProxy<{
+}> & import("vue").VueConstructor<Vue> & (new (...args: any[]) => import("@vue/composition-api").ComponentRenderProxy<{
     logo: any;
     logoAlt: string;
     isFixed: boolean;

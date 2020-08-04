@@ -19,9 +19,6 @@
       "declarationDir": "./typings",
       "experimentalDecorators": true,
       "rootDir": "packages",
-      "types": [
-        "webpack-env"
-      ],
       "paths": {
         "@/*": [
           "src/*"

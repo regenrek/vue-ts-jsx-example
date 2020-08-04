@@ -11,8 +11,8 @@ export declare const themeContainer: import("vue-unstated").Container<{
     };
     switchThemeVariant: (variant: any) => void;
     toggleDarkLightMode: () => void;
-    isDarkTheme: import("vue-demi").ComputedRef<boolean>;
-    themeVariant: import("vue-demi").Ref<string>;
+    isDarkTheme: import("@vue/composition-api").ComputedRef<boolean>;
+    themeVariant: import("@vue/composition-api").Ref<string>;
 }, {
     themeVariant: string;
 }>;

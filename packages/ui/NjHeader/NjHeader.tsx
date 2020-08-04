@@ -29,7 +29,7 @@ export default defineComponent({
     return (
       <div class={['bg-red', { fixed: isFixed }]}>
         <header>
-          <div slot="logo" v-bind="{logo,logoAlt}">
+          <div slot="logo" v-slot="{logo,logoAlt}">
             <img src={logo} alt={logoAlt} />
           </div>
           {this.$slots.sidebar}

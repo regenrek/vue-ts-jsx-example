@@ -7,13 +7,16 @@ storiesOf('UI', module)
   .add('NjHeader', () => {
     return Vue.extend({
       render(): VNode {
+        const x = 'x'
+        const y = 'y'
+
         return (
           <div>
             <div id='demo'>
               <NjThemeProvider>
-                <NjHeader>
-                  <template slot="logo">
-                    TEST
+                <NjHeader logo={x} logoAlt={y}>
+                  <template slot="logo" v-slot={logo, logoAlt}>
+                    {logo} + {logoAlt}
                   </template>
                   <template slot="burger">
                     <NjBurger />
