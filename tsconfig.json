@@ -15,21 +15,24 @@
       "noUnusedLocals": false,
       "noUnusedParameters": false,
       "declaration": true,
-      "declarationDir": "../typings",
+      "declarationDir": "./typings",
       "experimentalDecorators": true,
-      "rootDir": ".",
+      "rootDir": "packages",
       "lib": [
         "esnext",
         "dom",
         "dom.iterable",
         "scripthost"
+      ],
+      "typeRoots": [
+        "types",
+        "node_modules/@types"
       ]
     },
     "include": [
-      "**/*.ts",
-      "**/*.tsx",
-      "../types/*.d.ts",
-      "../node_modules/vue-tsx-support/enable-check.d.ts"
+      "packages/**/*.ts",
+      "packages/**/*.tsx",
+      "node_modules/vue-tsx-support/enable-check.d.ts"
     ],
     "exclude": [
       "src",
@@ -40,7 +43,9 @@
       "**/node_modules",
       "**/*.spec.ts",
       "**/__tests__",
-      "**/*.test.ts"
+      "**/*.test.ts",
+      "abc",
+      "types2"
     ]
   }
   
