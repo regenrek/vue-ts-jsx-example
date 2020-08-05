@@ -1,4 +1,4 @@
-import { TabDefinition } from '../../../types/mainTypes';
+import { TabDefinition } from '../../types/mainTypes';
 interface ScopedSlotArgs {
     default: {
         tab: TabDefinition;
