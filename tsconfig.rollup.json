@@ -1,6 +1,6 @@
   
 {
-    "extends": "./tsconfig.json",
+    "extends": "./packages/tsconfig.json",
     "compilerOptions": {
       "declaration": false,
     }

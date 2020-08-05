@@ -30,7 +30,7 @@ async function buildMetaFiles(packageVersion) {
 
     const packageJSON = {
       name: `@nujek/${pkg}`,
-      description: 'Collection of essential Vue Composition API',
+      description: 'Nujek Framework',
       version: packageVersion,
       main: 'index.cjs.js',
       typings: 'index.d.ts',

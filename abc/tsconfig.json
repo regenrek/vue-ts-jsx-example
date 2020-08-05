@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
       "target": "es6",
-      "module": "esnext",
+      "module": "es2015",
       "strict": true,
       "allowJs": false,
       "jsx": "preserve",
@@ -15,15 +15,9 @@
       "noUnusedLocals": false,
       "noUnusedParameters": false,
       "declaration": true,
-      "declarationDir": "./typings",
+      "declarationDir": "../typings",
       "experimentalDecorators": true,
-      "rootDir": "packages",
-      "baseUrl": ".",
-      "paths": {
-        "@/*": [
-          "src/*"
-        ]
-      },
+      "rootDir": ".",
       "lib": [
         "esnext",
         "dom",
@@ -32,15 +26,21 @@
       ]
     },
     "include": [
-      "packages/**/*.ts",
-      "packages/**/*.tsx",
-      "node_modules/vue-tsx-support/enable-check.d.ts",
-      "types/*.d.ts"
+      "**/*.ts",
+      "**/*.tsx",
+      "../node_modules/vue-tsx-support/enable-check.d.ts"
     ],
     "exclude": [
       "src",
       "node_modules",
-      "**/node_modules"
+      "**/node_modules",
+      "packages/**/*.stories.tsx",
+      "**/dist",
+      "node_modules",
+      "**/node_modules",
+      "**/*.spec.ts",
+      "**/__tests__",
+      "**/*.test.ts"
     ]
   }
   

@@ -1,0 +1,46 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "es2015",
+      "strict": true,
+      "allowJs": false,
+      "jsx": "preserve",
+      "jsxFactory": "VueTsxSupport",
+      "importHelpers": true,
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "sourceMap": true,
+      "noImplicitAny": false,
+      "noUnusedLocals": false,
+      "noUnusedParameters": false,
+      "declaration": true,
+      "declarationDir": "../typings",
+      "experimentalDecorators": true,
+      "rootDir": ".",
+      "lib": [
+        "esnext",
+        "dom",
+        "dom.iterable",
+        "scripthost"
+      ]
+    },
+    "include": [
+      "**/*.ts",
+      "**/*.tsx",
+      "../node_modules/vue-tsx-support/enable-check.d.ts"
+    ],
+    "exclude": [
+      "src",
+      "node_modules",
+      "**/node_modules",
+      "packages/**/*.stories.tsx",
+      "**/dist",
+      "node_modules",
+      "**/node_modules",
+      "**/*.spec.ts",
+      "**/__tests__",
+      "**/*.test.ts"
+    ]
+  }
+  
