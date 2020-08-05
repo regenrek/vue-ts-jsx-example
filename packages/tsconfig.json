@@ -28,6 +28,7 @@
     "include": [
       "**/*.ts",
       "**/*.tsx",
+      "../types/*.d.ts",
       "../node_modules/vue-tsx-support/enable-check.d.ts"
     ],
     "exclude": [
@@ -36,7 +37,6 @@
       "**/node_modules",
       "packages/**/*.stories.tsx",
       "**/dist",
-      "node_modules",
       "**/node_modules",
       "**/*.spec.ts",
       "**/__tests__",

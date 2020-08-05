@@ -5,6 +5,6 @@ interface ScopedSlotArgs {
     };
 }
 declare const _default: import("vue-tsx-support")._TsxComponentV3<import("vue").default, {}, import("vue-tsx-support").PropsForOutside<{
-    tabs: readonly any[];
+    tabs: readonly TabDefinition<string, {}, {}>[];
 }, "tabs">, {}, {}, ScopedSlotArgs>;
 export default _default;
