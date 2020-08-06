@@ -1,6 +1,6 @@
 {
   "name": "@nujek/ui",
-  "version": "0.0.95",
+  "version": "0.0.96",
   "description": "Nujek framework",
   "repository": "git@gitlab.com:nujek2/nujek.git",
   "author": "Kevin Regenrek <hello@regenrek.at>",
@@ -78,6 +78,7 @@
     "@vue/cli-service": "~4.4.0",
     "@vue/eslint-config-typescript": "^5.0.2",
     "@vue/test-utils": "1.0.3",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "babel-loader": "8.1.0",
     "babel-plugin-vue-jsx-modifier": "^1.1.2",
     "babel-plugin-vue-tsx-functional": "^0.1.2",
@@ -137,8 +138,7 @@
     "vue-property-decorator": "^9.0.0",
     "vue-strict-prop": "^0.3.6",
     "vue-template-compiler": "^2.6.11",
-    "vue-tsx-support": "^3.0.0-preview.1",
-    "babel-helper-vue-jsx-merge-props": "^2.0.3"
+    "vue-tsx-support": "^3.0.0-preview.1"
   },
   "peerDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
