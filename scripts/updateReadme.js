@@ -4,7 +4,7 @@ const consola = require('consola')
 const packages = require('./packages')
 
 const srcDir = path.resolve(__dirname, '../packages')
-const storybookUrl = 'https://vueuse.js.org'
+const storybookUrl = 'https://nujek.io'
 
 async function updateReadme() {
   packages.reverse()
@@ -63,7 +63,7 @@ async function updateReadme() {
     let functionList = '\n\n'
 
     if (pkg !== 'ui')
-      addOnsList += `\n- ${packageOptions.name} ([\`@vueuse/${pkg}\`](${storybookUrl}/?path=/story/add-ons-${pkg}--read-me)) - ${packageOptions.description}\n`
+      addOnsList += `\n- ${packageOptions.name} ([\`@nujek/${pkg}\`](${storybookUrl}/?path=/story/add-ons-${pkg}--read-me)) - ${packageOptions.description}\n`
 
     for (const category of Object.keys(categories).sort()) {
       functionList += `- ${category}\n`

@@ -15,11 +15,11 @@ for (const [pkg, options] of packages) {
   const globals = {
     vue: 'Vue',
     'vue-demi': 'VueDemi',
-    '@vue/composition-api': 'VueCompositionAPI',
+    'vue-tsx-support': 'tsx',
     '@vue/runtime-dom': 'Vue',
     ...(options.globals || {})
   }
-  const name = 'VueUse'
+  const name = 'Nujek'
 
   configs.push({
     input: `packages/${pkg}/index.ts`,
@@ -68,7 +68,6 @@ for (const [pkg, options] of packages) {
     external: [
       'vue-demi',
       'vue',
-      '@vue/composition-api',
       '@vue/runtime-dom',
       'vue',
       'vue-property-decorator',

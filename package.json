@@ -1,10 +1,11 @@
 {
   "name": "@nujek/ui",
-  "version": "0.0.96",
+  "version": "0.1.1",
   "description": "Nujek framework",
   "repository": "git@gitlab.com:nujek2/nujek.git",
   "author": "Kevin Regenrek <hello@regenrek.at>",
   "license": "MIT",
+  "source": "packages",          
   "scripts": {
     "build": "node ./scripts/build",
     "release:gh": "npm test && bump --commit --tag --push --preid alpha && conventional-github-releaser -p angular",
@@ -24,7 +25,8 @@
     "storybook:build": "npm run typings && build-storybook",
     "serve": "vue-cli-service serve",
     "build-vue": "vue-cli-service build",
-    "lint-vue": "vue-cli-service lint"
+    "lint-vue": "vue-cli-service lint",
+    "build2": "microbundle"
   },
   "husky": {
     "hooks": {
@@ -149,6 +151,7 @@
     "tailwindcss-multi-theme": "^1.0.3",
     "vee-validate": "4.0.0-alpha.6",
     "vue": "^2.6.11",
-    "vue-unstated": "^0.0.7"
+    "vue-unstated": "^0.0.7",
+    "vue-tsx-support": "^3.0.0-preview.1"
   }
 }

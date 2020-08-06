@@ -1,4 +1,4 @@
-import { SetupContext } from '@vue/composition-api'
+import { SetupContext } from 'vue-demi'
 import { VNode } from 'vue/types/umd'
 
 export function evaluateSlot<

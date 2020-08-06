@@ -1,6 +1,6 @@
 import * as vca from 'vue-tsx-support/lib/vca'
 import p from 'vue-strict-prop'
-import { TabDefinition } from '../../types/mainTypes'
+import { TabDefinition } from '../../../types/mainTypes'
 
 interface ScopedSlotArgs {
   default: { tab: TabDefinition }

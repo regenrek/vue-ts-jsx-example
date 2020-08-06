@@ -6,7 +6,7 @@ export default create({
   colorPrimary: '#35495e',
   colorSecondary: '#42b883',
 
-  brandTitle: 'VueUse',
+  brandTitle: 'Nujek',
   brandUrl: 'git@gitlab.com:nujek2/nujek.git',
   brandImage: 'todo'
 })

@@ -16,7 +16,7 @@ async function publish() {
 
     exec(`yarn publish --access public --non-interactive --registry ${registry}`, { stdio: 'inherit', cwd: packageDist })
 
-    consola.success(`Published @vueuse/${pkg}`)
+    consola.success(`Published @nujek/${pkg}`)
   }
 }
 

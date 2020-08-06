@@ -1,4 +1,4 @@
-export declare const version = "0.0.95";
+export declare const version = "0.1.1";
 export * from './NjBurger';
 export * from './NjButton';
 export * from './NjTabs';
