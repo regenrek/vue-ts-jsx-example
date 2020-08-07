@@ -16,7 +16,6 @@ for (const [pkg, options] of packages) {
     vue: 'Vue',
     'vue-demi': 'VueDemi',
     'vue-tsx-support': 'tsx',
-    '@vue/runtime-dom': 'Vue',
     ...(options.globals || {})
   }
   const name = 'Nujek'
@@ -50,6 +49,11 @@ for (const [pkg, options] of packages) {
     ],
     plugins: [
       resolve(),
+      commonjs({
+        namedExports: {
+          'vue-tsx-support': ['ofType']
+        }
+      }),
       typescript({
         tsconfig: path.resolve(__dirname, 'tsconfig.rollup.json'),
         tsconfigOverride: {
@@ -58,7 +62,6 @@ for (const [pkg, options] of packages) {
           declarationMap: false
         }
       }),
-      commonjs(),
       babel({
         extensions: [...babel_extensions, '.ts', '.tsx'],
         exclude: ['node_modules/**'],
@@ -67,7 +70,6 @@ for (const [pkg, options] of packages) {
     ],
     external: [
       'vue-demi',
-      'vue',
       '@vue/runtime-dom',
       'vue',
       'vue-property-decorator',
